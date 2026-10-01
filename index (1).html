@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced To-Do Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Advanced To-Do Manager</h1>
+
+    <button id="themeBtn">🌙 Dark Mode</button>
+
+    <div class="input-section">
+
+        <input type="text" id="taskInput" placeholder="Enter Task">
+
+        <input type="date" id="dueDate">
+
+        <input type="time" id="dueTime">
+
+        <select id="priority">
+            <option value="High">High Priority</option>
+            <option value="Medium">Medium Priority</option>
+            <option value="Low">Low Priority</option>
+        </select>
+
+        <button onclick="addTask()">Add Task</button>
+
+    </div>
+
+    <input type="text" id="searchBox" placeholder="Search Tasks...">
+
+    <div class="filters">
+        <button onclick="filterTasks('all')">All</button>
+        <button onclick="filterTasks('active')">Active</button>
+        <button onclick="filterTasks('completed')">Completed</button>
+    </div>
+
+    <h3>Total Tasks: <span id="taskCount">0</span></h3>
+
+    <ul id="taskList"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
